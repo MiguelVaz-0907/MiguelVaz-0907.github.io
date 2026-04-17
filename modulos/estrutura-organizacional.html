@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Estrutura Organizacional</title>
+	<link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="estrutura-organizacional.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container header-content">
+			<div class="logo-area">
+				<img src="/img/logo-sem-fundo.png" alt="Logo da Câmara Municipal" class="logo">
+				<div class="logo-text">
+					<h1>Portal da Transparência</h1>
+					<span>Município Transparente</span>
+				</div>
+			</div>
+
+			<button class="btn btn-primary">Entrar</button>
+		</div>
+	</header>
+
+	<main class="pagina-modulo">
+		<div class="container">
+
+			<!-- TOPO -->
+			<section class="topo-modulo">
+                                        <div class="topo-modulo-texto">
+                        <nav class="breadcrumb">
+                            <a href="/index.html">Início</a>
+                            <span>/</span>
+                            <span class="ativo">Estrutura Organizacional</span>
+                        </nav>					
+                    <h2>Estrutura Organizacional</h2>
+					<p>
+						Consulte detalhadamente os órgãos, responsáveis técnicos e informações
+						de contato direto da administração municipal.
+					</p>
+				</div>
+
+				<div class="topo-modulo-acoes">
+					<button class="btn btn-primary">+ Novo Órgão</button>
+					<button class="btn btn-outline">Exportar Planilha</button>
+				</div>
+			</section>
+
+			<!-- FILTROS -->
+			<section class="filtros-modulo">
+				<form class="form-filtros">
+					<div class="campo campo-grande">
+						<label for="busca">Pesquisar</label>
+						<input
+							type="text"
+							id="busca"
+							placeholder="Pesquisar por órgão, responsável ou e-mail..."
+						>
+					</div>
+
+					<div class="campo">
+						<label for="departamento">Departamento</label>
+						<select id="departamento">
+							<option>Todos os Departamentos</option>
+							<option>Secretaria</option>
+							<option>Gabinete</option>
+							<option>Coordenação</option>
+						</select>
+					</div>
+
+					<div class="campo">
+						<label for="status">Situação</label>
+						<select id="status">
+							<option>Todos</option>
+							<option>Ativo</option>
+							<option>Inativo</option>
+						</select>
+					</div>
+
+					<div class="acoes-filtros">
+						<button type="reset" class="btn btn-light">Limpar</button>
+						<button type="submit" class="btn btn-primary">Pesquisar</button>
+					</div>
+				</form>
+			</section>
+
+			<!-- TABELA -->
+			<section class="tabela-modulo">
+				<div class="table-wrapper">
+					<table>
+						<thead>
+							<tr>
+								<th>Órgão</th>
+								<th>Responsável</th>
+								<th>Endereço</th>
+								<th>Horário</th>
+								<th>Contato</th>
+								<th>Ações</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>
+									<strong>Secretaria de Saúde</strong><br>
+									<span class="codigo-item">SESAU</span>
+								</td>
+								<td>João Silva</td>
+								<td>Rua das Flores, 123 - Centro</td>
+								<td><span class="badge badge-success">08:00 - 17:00</span></td>
+								<td>
+									(91) 4002-8922<br>
+									saude@municipio.gov.br
+								</td>
+								<td class="acoes-tabela">
+									<button class="btn btn-small btn-primary">Detalhes</button>
+									<button class="btn-icon" aria-label="Excluir">🗑</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<strong>Secretaria de Educação</strong><br>
+									<span class="codigo-item">SEMED</span>
+								</td>
+								<td>Maria Oliveira</td>
+								<td>Av. Central, 456 - Bairro Novo</td>
+								<td><span class="badge badge-success">07:30 - 18:00</span></td>
+								<td>
+									(91) 4002-9923<br>
+									educacao@municipio.gov.br
+								</td>
+								<td class="acoes-tabela">
+									<button class="btn btn-small btn-primary">Detalhes</button>
+									<button class="btn-icon" aria-label="Excluir">🗑</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<strong>Gabinete do Prefeito</strong><br>
+									<span class="codigo-item">GAB</span>
+								</td>
+								<td>Carlos Souza</td>
+								<td>Praça da Matriz, 1 - Centro</td>
+								<td><span class="badge badge-warning">09:00 - 16:00</span></td>
+								<td>
+									(91) 4002-0124<br>
+									gabinete@municipio.gov.br
+								</td>
+								<td class="acoes-tabela">
+									<button class="btn btn-small btn-primary">Detalhes</button>
+									<button class="btn-icon" aria-label="Excluir">🗑</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="rodape-tabela">
+					<p>Mostrando 1 a 3 de 12 registros</p>
+
+					<div class="paginacao">
+						<button class="pagina-item ativo">1</button>
+						<button class="pagina-item">2</button>
+						<button class="pagina-item">3</button>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-content">
+			<div class="footer-col">
+				<h3>Câmara Municipal de Miguel</h3>
+				<p>
+					Portal de Transparência destinado à divulgação de informações públicas,
+					promovendo o acesso à informação e o controle social.
+				</p>
+			</div>
+
+			<div class="footer-col">
+				<h4>Links Úteis</h4>
+				<ul>
+					<li><a href="#">Início</a></li>
+					<li><a href="#">Ouvidoria</a></li>
+					<li><a href="#">SIC</a></li>
+					<li><a href="#">Perguntas Frequentes</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h4>Contato</h4>
+				<ul>
+					<li>Email: contato@camara.gov.br</li>
+					<li>Telefone: (00) 0000-0000</li>
+					<li>Endereço: Rua Exemplo, 123</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>© 2026 Câmara Municipal de Miguel - Todos os direitos reservados</p>
+		</div>
+	</footer>
+
+</body>
+</html>
