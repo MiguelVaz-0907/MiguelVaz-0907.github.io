@@ -1,0 +1,74 @@
+/* Monograma: #FDFFED + #8A8F6A | Alex Brush + Raleway + Cormorant (próximo de Catchy Mager, ver PDF) */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --font-script: 'Alex Brush', cursive;
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-body: 'Raleway', system-ui, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  --cream: #fdffed;
+  --sage: #8a8f6a;
+  --sage-dark: #6d7257;
+  --sage-darker: #4a4f3c;
+  --sage-light: #a8ad91;
+  --sage-muted: #c4c9b2;
+
+  --ink: #2f3328;
+  --muted: #5c6250;
+  --card: #fefff6;
+  --line: #dde2c8;
+
+  /* compat: UI antigo usava "gold"; agora mapeia para a paleta do monograma */
+  --gold: var(--sage);
+  --gold-light: var(--sage-light);
+  --gold-dark: var(--sage-dark);
+
+  --shadow-card:
+    0 4px 6px -1px rgba(74, 79, 60, 0.07),
+    0 2px 4px -2px rgba(74, 79, 60, 0.05);
+  --shadow-hover:
+    0 20px 40px -12px rgba(74, 79, 60, 0.12),
+    0 8px 16px -8px rgba(74, 79, 60, 0.08);
+
+  color-scheme: light;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  min-height: 100svh;
+  border: none;
+  text-align: initial;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+button {
+  font-family: inherit;
+}

@@ -15,6 +15,15 @@
     <title>Thayna & Eduardo — Casamento</title>
   </head>
   <body>
+    <script>
+      ;(function () {
+        var u = sessionStorage.getItem('ghp-spa-redirect')
+        if (u) {
+          sessionStorage.removeItem('ghp-spa-redirect')
+          if (u !== location.href) history.replaceState(null, '', u)
+        }
+      })()
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

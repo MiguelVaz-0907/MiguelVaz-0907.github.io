@@ -1,0 +1,7 @@
+# Permite invokedda app com anon/publishable key (sem sessão).
+[functions.create-pix-charge]
+verify_jwt = false
+
+# Desativar verificação JWT no webhook (o Mercado Pago não envia token do Supabase).
+[functions.mercadopago-webhook]
+verify_jwt = false
